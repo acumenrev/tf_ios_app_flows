@@ -11,8 +11,8 @@ import RxFlow
 public enum FlowAStepper : Step {
     // login
     case login
-    case loginSuccess
-    case loginFailed
+    case loginSuccess(message : String)
+    case loginFailed(message: String)
 }
 
 public protocol IFlowA : Flow {
