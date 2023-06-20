@@ -20,7 +20,8 @@ public enum FlowAStepper : Step {
     case loginFailed(message: String)
 }
 
-public protocol IFlowA : Flow {
+public protocol IFlowA : Flow, AnyObject {
     var appService : String { get }
+    var rootCoordinator : FlowCoordinator { get }
  
 }
