@@ -17,4 +17,6 @@ public enum FlowAStepper : Step {
 
 public protocol IFlowA : Flow {
     var appService : String { get }
+    
+    init() 
 }
