@@ -8,6 +8,11 @@
 import Foundation
 import RxFlow
 
+public enum AllFlows {
+    case flowA
+    case flowB
+}
+
 public enum FlowAStepper : Step {
     // login
     case login
@@ -17,6 +22,5 @@ public enum FlowAStepper : Step {
 
 public protocol IFlowA : Flow {
     var appService : String { get }
-    
-    init() 
+ 
 }
