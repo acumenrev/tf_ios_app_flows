@@ -25,3 +25,9 @@ public protocol IFlowA : Flow, AnyObject {
     var rootCoordinator : FlowCoordinator? { get }
  
 }
+
+
+public enum ModuleARoutes : String {
+    case login = "module-a://login"
+    case loginResult = "module-a://login-result"
+}

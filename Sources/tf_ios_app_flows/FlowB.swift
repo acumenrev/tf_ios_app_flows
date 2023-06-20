@@ -19,3 +19,10 @@ public protocol IFlowB : Flow {
     var appService : String { get }
 }
 
+
+public enum ModuleBRoutes : String {
+    case login = "module-b://profile"
+    case loginResult = "module-b://profile-update-result"
+}
+
+
