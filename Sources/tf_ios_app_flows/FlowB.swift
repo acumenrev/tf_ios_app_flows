@@ -21,8 +21,8 @@ public protocol IFlowB : Flow {
 
 
 public enum ModuleBRoutes : String {
-    case login = "module-b://profile"
-    case loginResult = "module-b://profile-update-result"
+    case profile = "module-b://profile"
+    case profileUpdateResult = "module-b://profile-update-result"
 }
 
 
