@@ -23,6 +23,7 @@ public enum FlowAStepper : Step {
 public protocol IFlowA : Flow, AnyObject {
     var appService : String { get }
     var rootCoordinator : FlowCoordinator? { get }
+    var flowB : IFlowB? { get }
  
 }
 
