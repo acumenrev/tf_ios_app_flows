@@ -17,6 +17,9 @@ public enum FlowBStepper : Step {
 
 public protocol IFlowB : Flow {
     var appService : String { get }
+    
+    
+    func presentProfileScreen() -> FlowContributors
 }
 
 
