@@ -10,6 +10,7 @@ import RxFlow
 
 public enum FlowBStepper : Step {
     // login
+    case empty
     case profile
     case updateProfileSuccess
     case updateProfileWithPayload(withData : String)
